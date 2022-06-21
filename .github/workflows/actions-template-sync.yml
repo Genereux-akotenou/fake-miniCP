@@ -2,7 +2,7 @@ name: actions-template-sync
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   repo-sync:
