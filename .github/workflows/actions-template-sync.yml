@@ -1,11 +1,8 @@
 name: actions-template-sync
 
 on:
-  # cronjob trigger At 00:00 on day-of-month 1.
-  schedule:
-  - cron:  "0 0 1 * *"
-  # manual trigger
-  workflow_dispatch:
+  push:
+    branches: [master]
 
 jobs:
   repo-sync:
