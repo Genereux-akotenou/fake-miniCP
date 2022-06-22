@@ -1,7 +1,7 @@
 name: actions-template-sync
 
 on:
-    # cronjob trigger
+  # cronjob trigger
   schedule:
   - cron:  "0 0 1 * *"
   # manual trigger
@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: actions-template-sync
-        uses: AndreasAugustin/actions-template-sync@v0.3.1-draft
+        uses: Genereux-akotenou/actions-template-sync@v0.3.1-draft
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           source_repo_path: Genereux-akotenou/test123
